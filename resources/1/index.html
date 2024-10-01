@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="96x96" href="/gbc/assets/images/content/icon-96x96.png">
+    <style>[x-cloak] {display: none !important;}</style>
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner&display=block" rel="stylesheet preload"/>
+    <link rel="stylesheet" href="/gbc/css/styles.css"/>
+    <script src="/gbc/js/alpine.min.js"></script>
+    
+    
+    <title>Global Brain Consortium - News &amp; Events</title>
+  </head>
+  <body x-cloak class="bg-c-bg-l  bg-pattern-2 ">
+    
+
+
+<nav x-data="{ open: false }" @keydown.escape="open = false" class="bg-c-bg-l/50  /50">
+  <div class="mx-5 pt-5">
+  <div class="pb-3 pt-8 px-8 rounded-t-lg mx-auto max-w-screen-xl w-full flex flex-wrap items-center justify-between bg-c-fg1-l">
+  <div class="flex items-center flex-shrink-0 text-gray-600  mr-6">
+    <a href="/gbc/" class="flex items-center">
+    <img src="/gbc/assets/images/logos/gbc-logo.png" class="logo-size">
+</a>
+  </div>
+  <div class="block lg:hidden" aria-controls="navbar-default" aria-expanded="false">
+    <button type="button" @click="open = !open" class="flex items-center h-11 px-3 py-2 border-2 text-gray-400 border-gray-400 hover:text-gray-500 hover:border-gray-500   hover: hover: " :class = "{'border-b-0':open, 'rounded-t-lg':open, 'rounded-lg':!open}">
+      <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+    </button>
+  </div>
+  <div class="w-full border-2 rounded-tl-lg rounded-bl-lg rounded-br-lg border-gray-400  lg:border-0 lg:flex lg:items-center lg:w-auto" :class="{ 'block shadow-3xl': open, 'hidden': !open }">
+    <div class="text-sm lg:block lg:flex-grow">
+      <ul class="flex-row lg:flex">
+        
+        <li>
+          
+          <a  href="/gbc/about/" 
+             
+              class="select-none block md:mx-1 py-3 px-4 pb-4 text-lg rounded-lg lg:text-base lg:text-md lg:inline-block lg:mt-0 text-gray-600  hover:text-gray-800 hover:bg-gray-100">About</a>
+          
+        </li>
+        
+        <li>
+          
+        </li>
+        
+        <li>
+          
+          <a  href="/gbc/projects/" 
+             
+              class="select-none block md:mx-1 py-3 px-4 pb-4 text-lg rounded-lg lg:text-base lg:text-md lg:inline-block lg:mt-0 text-gray-600  hover:text-gray-800 hover:bg-gray-100">Projects</a>
+          
+        </li>
+        
+        <li>
+          
+          <a  href="/gbc/resources/0/" 
+             
+              class="select-none block md:mx-1 py-3 px-4 pb-4 text-lg rounded-lg lg:text-base lg:text-md lg:inline-block lg:mt-0 text-gray-600  hover:text-gray-800 hover:bg-gray-100">News &amp; Events</a>
+          
+        </li>
+        
+        <li>
+          
+          <a  href="/gbc/network/" 
+             
+              class="select-none block md:mx-1 py-3 px-4 pb-4 text-lg rounded-lg lg:text-base lg:text-md lg:inline-block lg:mt-0 text-gray-600  hover:text-gray-800 hover:bg-gray-100">Network</a>
+          
+        </li>
+        
+        <li>
+          
+          <a  href="/gbc/partners/" 
+             
+              class="select-none block md:mx-1 py-3 px-4 pb-4 text-lg rounded-lg lg:text-base lg:text-md lg:inline-block lg:mt-0 text-gray-600  hover:text-gray-800 hover:bg-gray-100">Partners</a>
+          
+        </li>
+        
+        <li>
+          
+          <a  href="/gbc/join/" 
+             
+              class="select-none block md:mx-1 py-3 px-4 pb-4 text-lg rounded-lg lg:text-base lg:text-md lg:inline-block lg:mt-0 text-gray-600  hover:text-gray-800 hover:bg-gray-100">Contact</a>
+          
+        </li>
+        
+      </ul>
+      
+    </div>
+  </div>
+  </div>
+  </div>
+</nav>
+    <div>
+    
+<section class="bg-c-bg-l/50">
+            <div class="mx-5">
+            
+  <div class="bg-c-fg1-l  grid place-content-center max-w-screen-xl px-8 lg:px-16 pt-8 mx-auto lg:pt-12 lg:grid-cols-12">
+    <div class="mr-auto place-self-center lg:col-span-12">
+      <h1
+        class="text-center uppercase text-colour-dark  lg:text-left mb-4 text-3xl/snug font-extrabold tracking-normal md:text-4xl/snug xl:text-5xl/snug ">
+        News & Events</h1>
+      <!-- <p
+        class=" text-center lg:text-left mb-5 mt-5 font-light text-colour-dark mx-15 md:mx-5 md:ml-0 md:mr-6 lg:mb-8 md:text-lg/normal lg:text-xl/normal  ">
+        Browse the News and Events from the Global Brain Consortium.
+      </p> -->
+      <div class="mx-auto justify-center md:justify-start mx-15">
+          <a href="/gbc/gbc-assembly" class=" mx-auto lg:mx-0 md:mt-5 button-square-primary  ">
+                GBC Annual Meeting
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+                    stroke="currentColor" class="w-5 h-5 ml-2 -mr-1">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                </svg> -->
+            </a>
+
+          <a href="/gbc/veragross" class=" mx-auto lg:mx-0 md:mt-5 button-square-primary  ">
+                Vera Gross Lecture
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+                    stroke="currentColor" class="w-5 h-5 ml-2 -mr-1">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                </svg> -->
+            </a>
+      </div>
+
+    </div>
+  </div>
+
+            </div>
+            </section>
+
+
+<section class="bg-c-bg-l/50">
+            <div class="mx-5">
+            
+<div class="bg-c-fg1-l max-w-screen-xl px-4 py-5 mx-auto lg:px-16 lg:py-8">
+    
+    <div class="bg-c-bg2-l   max-w-screen-xl rounded-xl px-8 pb-8 pt-8 mx-auto my-8 solid-shadow  ">
+      <h3
+        class="text-center text-gray-500  lg:text-left mb-4 text-sm/snug tracking-normal md:text-md/snug xl:text-lg/snug ">
+        May 10, 2024</h3>
+
+      <h3
+        class="text-center text-gray-500  lg:text-left mb-4 text-sm/snug tracking-normal md:text-md/snug xl:text-lg/snug ">
+        <a href="https://eegnet.org/" rel="noopener noreferrer"
+        class="text-center text-colour-dark hover:underline  lg:text-left mb-4 width-full text-2xl/snug font-extrabold tracking-normal md:text-3xl/snug xl:text-4xl/snug ">
+        EEGNet Virtual Colloquium</a></h3>
+      
+
+      <div class="flex flex-wrap max-w-screen-xl py-8 mx-auto">
+        
+        <div class="flex px-10 py-2 max-w-sm lg:w-1/3 justify-center mx-auto"> 
+          <a href="https://eegnet.org/">
+            <img src="/gbc/assets/images/content/eegnet2023/eegnet-thumb.png">
+          </a>
+        </div>
+        
+        <div class="mx-auto place-self-center md:w-2/3">
+          <p
+            class="select-none text-center lg:text-left mb-5 mt-5 font-light text-colour-dark lg:mb-8 md:text-lg/normal lg:text-xl/normal  ">
+            This virtual meeting was held on May 10th, 2023, at 9am EDT. Moderated by Alan Evans, this event featured presentations by Pedro Valdes-Sosa, Jorge Bosch-Bayard, and Christine Rogers. Follow the link to eegNet.org for more information.
+          </p>
+          <div class="flex mx-auto justify-center md:justify-start ">
+            <a href="https://eegnet.org/"
+              class="mx-auto lg:mx-0 md:mt-5 button-square-primary  
+              rel="noopener noreferrer">
+              
+              Go To Link
+              
+              
+              <svg class="ml-2 w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="bg-c-bg2-l   max-w-screen-xl rounded-xl px-8 pb-8 pt-8 mx-auto my-8 solid-shadow  ">
+      <h3
+        class="text-center text-gray-500  lg:text-left mb-4 text-sm/snug tracking-normal md:text-md/snug xl:text-lg/snug ">
+        Mar 22, 2023</h3>
+
+      <h3
+        class="text-center text-gray-500  lg:text-left mb-4 text-sm/snug tracking-normal md:text-md/snug xl:text-lg/snug ">
+        <a href="https://www.youtube.com/watch?v=SIQzQRLme08" rel="noopener noreferrer"
+        class="text-center text-colour-dark hover:underline  lg:text-left mb-4 width-full text-2xl/snug font-extrabold tracking-normal md:text-3xl/snug xl:text-4xl/snug ">
+        2023 Vera Gross Lecture - Dr. Michael Milham</a></h3>
+      
+
+      <div class="flex flex-wrap max-w-screen-xl py-8 mx-auto">
+        
+        <div class="flex px-10 py-2 max-w-sm lg:w-1/3 justify-center mx-auto"> 
+          <a href="https://www.youtube.com/watch?v=SIQzQRLme08">
+            <img src="/gbc/assets/images/content/news/Milham_Michael_updated_CMI-400x225.jpg">
+          </a>
+        </div>
+        
+        <div class="mx-auto place-self-center md:w-2/3">
+          <p
+            class="select-none text-center lg:text-left mb-5 mt-5 font-light text-colour-dark lg:mb-8 md:text-lg/normal lg:text-xl/normal  ">
+            Dr. Michael Milham MD, PhD, delivered the Vera Gross Lecture on the Multimodal Characterization of Brain and Behavior - The Last Missing Ingredient for Precision Neuropsychiatry. This lecture was held in conjunction with the  annual assembly of the Global Brain Consortium on March 22, 2023. Dr. Milham is an internationally recognized neuroscience researcher and the Vice-President of the Child Mind Institute in New York City. He is the founding director of its Center for the Developing Brain and a practicing child and adolescent psychiatrist. Dr. Milham’s research interests include investigating how functional and structural connectivity in the brain may underlie differing forms of mental illness, and seeking to chart the course of brain development in healthy and affected children. Follow the link to YouTube to watch the recording.
+          </p>
+          <div class="flex mx-auto justify-center md:justify-start ">
+            <a href="https://www.youtube.com/watch?v=SIQzQRLme08"
+              class="mx-auto lg:mx-0 md:mt-5 button-square-primary  
+              rel="noopener noreferrer">
+              
+              View on YouTube
+              
+              
+              <svg class="ml-2 w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="bg-c-bg2-l   max-w-screen-xl rounded-xl px-8 pb-8 pt-8 mx-auto my-8 solid-shadow  ">
+      <h3
+        class="text-center text-gray-500  lg:text-left mb-4 text-sm/snug tracking-normal md:text-md/snug xl:text-lg/snug ">
+        Mar 22, 2023</h3>
+
+      <h3
+        class="text-center text-gray-500  lg:text-left mb-4 text-sm/snug tracking-normal md:text-md/snug xl:text-lg/snug ">
+        <a href="/gbc/event-annualMeeting-march2023" rel="noopener noreferrer"
+        class="text-center text-colour-dark hover:underline  lg:text-left mb-4 width-full text-2xl/snug font-extrabold tracking-normal md:text-3xl/snug xl:text-4xl/snug ">
+        2023 Annual Meeting</a></h3>
+      
+
+      <div class="flex flex-wrap max-w-screen-xl py-8 mx-auto">
+        
+        <div class="flex px-10 py-2 max-w-sm lg:w-1/3 justify-center mx-auto"> 
+          <a href="/gbc/event-annualMeeting-march2023">
+            <img src="/gbc/assets/images/content/gbc2023/gbc-meeting-2023.png">
+          </a>
+        </div>
+        
+        <div class="mx-auto place-self-center md:w-2/3">
+          <p
+            class="select-none text-center lg:text-left mb-5 mt-5 font-light text-colour-dark lg:mb-8 md:text-lg/normal lg:text-xl/normal  ">
+            This virtual meeting was held on March 22nd to 23rd, 2023, at 9am to 12pm EDT. This event highlighted the achievements of 2022, and introduced new projects in 2023 with inspirational presentations by outstanding researchers. The Vera Gross public lecture was presented by Dr. Michael P. Milham, Vice-president of the Child Mind Institute. Follow the link to read more.
+          </p>
+          <div class="flex mx-auto justify-center md:justify-start ">
+            <a href="/gbc/event-annualMeeting-march2023"
+              class="mx-auto lg:mx-0 md:mt-5 button-square-primary  
+              rel="noopener noreferrer">
+              
+              Read More
+              
+              
+              <svg class="ml-2 w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="bg-c-bg2-l   max-w-screen-xl rounded-xl px-8 pb-8 pt-8 mx-auto my-8 solid-shadow  ">
+      <h3
+        class="text-center text-gray-500  lg:text-left mb-4 text-sm/snug tracking-normal md:text-md/snug xl:text-lg/snug ">
+        Sep 12, 2022</h3>
+
+      <h3
+        class="text-center text-gray-500  lg:text-left mb-4 text-sm/snug tracking-normal md:text-md/snug xl:text-lg/snug ">
+        <a href="https://neuroinformatics.incf.org/2022/sessions" rel="noopener noreferrer"
+        class="text-center text-colour-dark hover:underline  lg:text-left mb-4 width-full text-2xl/snug font-extrabold tracking-normal md:text-3xl/snug xl:text-4xl/snug ">
+        INCF Assembly 2022</a></h3>
+      
+
+      <div class="flex flex-wrap max-w-screen-xl py-8 mx-auto">
+        
+        <div class="flex px-10 py-2 max-w-sm lg:w-1/3 justify-center mx-auto"> 
+          <a href="https://neuroinformatics.incf.org/2022/sessions">
+            <img src="/gbc/assets/images/content/news/incf-2022.png">
+          </a>
+        </div>
+        
+        <div class="mx-auto place-self-center md:w-2/3">
+          <p
+            class="select-none text-center lg:text-left mb-5 mt-5 font-light text-colour-dark lg:mb-8 md:text-lg/normal lg:text-xl/normal  ">
+            The International Neuroinformatics Coordinating Facility (INCF) was held on September 12th to 16th, 2022. There were two symposia organized by the GBC - GBC&#39;s EEG normative initiative for creating standards for MEEG analysis and EEG, the interface between neuroinformatics and clinical/basic science research. Speakers for the event were Pedro Valdes-Sosa, Joseph Picone, Christine Rogers, Scott Makeig, Michael Milham, Roberto Rodriguez, Tomas Ros, Jorge Bosch-Bayard. Follow the link to read more.
+          </p>
+          <div class="flex mx-auto justify-center md:justify-start ">
+            <a href="https://neuroinformatics.incf.org/2022/sessions"
+              class="mx-auto lg:mx-0 md:mt-5 button-square-primary  
+              rel="noopener noreferrer">
+              
+              Go To Link
+              
+              
+              <svg class="ml-2 w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="bg-c-bg2-l   max-w-screen-xl rounded-xl px-8 pb-8 pt-8 mx-auto my-8 solid-shadow  ">
+      <h3
+        class="text-center text-gray-500  lg:text-left mb-4 text-sm/snug tracking-normal md:text-md/snug xl:text-lg/snug ">
+        Sep 4, 2022</h3>
+
+      <h3
+        class="text-center text-gray-500  lg:text-left mb-4 text-sm/snug tracking-normal md:text-md/snug xl:text-lg/snug ">
+        <a href="https://ifcn.site-ym.com/mpage/ProgrammeOverview" rel="noopener noreferrer"
+        class="text-center text-colour-dark hover:underline  lg:text-left mb-4 width-full text-2xl/snug font-extrabold tracking-normal md:text-3xl/snug xl:text-4xl/snug ">
+        ICCN 2022 Geneva</a></h3>
+      
+
+      <div class="flex flex-wrap max-w-screen-xl py-8 mx-auto">
+        
+        <div class="flex px-10 py-2 max-w-sm lg:w-1/3 justify-center mx-auto"> 
+          <a href="https://ifcn.site-ym.com/mpage/ProgrammeOverview">
+            <img src="/gbc/assets/images/content/news/gbc-bg-thumb.png">
+          </a>
+        </div>
+        
+        <div class="mx-auto place-self-center md:w-2/3">
+          <p
+            class="select-none text-center lg:text-left mb-5 mt-5 font-light text-colour-dark lg:mb-8 md:text-lg/normal lg:text-xl/normal  ">
+            The International Congress of Clinical Neurophysiology (ICCN) was held on September 4th to 8th, 2022. There were two symposia organized by the GBC-OHBM-IFCN. The first symposia was Quantitative Neuroimaging of Public Health problems, Examples from Latin America, chaired by Jorge Bosch-Bayard (Montreal Neurological Institute). The second symposia was EEG in the clouds, chaired by Pedro A. Valdes Sosa. Follow the link to see the program overview.
+          </p>
+          <div class="flex mx-auto justify-center md:justify-start ">
+            <a href="https://ifcn.site-ym.com/mpage/ProgrammeOverview"
+              class="mx-auto lg:mx-0 md:mt-5 button-square-primary  
+              rel="noopener noreferrer">
+              
+              Go To Link
+              
+              
+              <svg class="ml-2 w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+  <div class="flex max-w-screen-xl mx-auto my-5">
+    <div class="ml-auto">
+      
+        <a href="/gbc/resources/0/" class="px-2 x-auto lg:mx-0 md:mt-5 button-square-primary  ">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75" />
+        </svg>
+        </a>
+      
+      
+        <a href="/gbc/resources/2/" class="px-2 mx-auto lg:mx-0 md:mt-5 button-square-primary  ">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+        </svg>
+        </a>
+      
+    </div>
+  </div>
+</div>
+
+            </div>
+            </section>
+
+
+    </div>
+    
+<footer class="bg-c-bg-l/50  /50">
+  <div class="mx-5">
+  <div class="pb-3 pt-8 px-8 rounded-b-lg mx-auto max-w-screen-xl w-full flex flex-wrap items-center justify-between bg-c-fg1-l">
+  </div> 
+    <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+      <span class="text-sm text-gray-500 sm:text-center  ">Copyright © 2024 <a href="/gbc/" class="hover:underline">Global Brain Consortium</a>
+    </span>
+      <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500  sm:mt-0">
+        
+          <li>
+            
+            <a  href="/gbc/about/" 
+              
+               class="select-none block hover:underline me-4 md:me-6">About</a>
+            
+          </li>
+          
+          <li>
+            
+          </li>
+          
+          <li>
+            
+            <a  href="/gbc/projects/" 
+              
+               class="select-none block hover:underline me-4 md:me-6">Projects</a>
+            
+          </li>
+          
+          <li>
+            
+            <a  href="/gbc/resources/0/" 
+              
+               class="select-none block hover:underline me-4 md:me-6">News &amp; Events</a>
+            
+          </li>
+          
+          <li>
+            
+            <a  href="/gbc/network/" 
+              
+               class="select-none block hover:underline me-4 md:me-6">Network</a>
+            
+          </li>
+          
+          <li>
+            
+            <a  href="/gbc/partners/" 
+              
+               class="select-none block hover:underline me-4 md:me-6">Partners</a>
+            
+          </li>
+          
+          <li>
+            
+            <a  href="/gbc/join/" 
+              
+               class="select-none block hover:underline me-4 md:me-6">Contact</a>
+            
+          </li>
+          
+      </ul>
+    </div>
+  </div>
+</footer>
+
+  </body>
+</html>

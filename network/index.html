@@ -1,0 +1,598 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="96x96" href="/gbc/assets/images/content/icon-96x96.png">
+    <style>[x-cloak] {display: none !important;}</style>
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner&display=block" rel="stylesheet preload"/>
+    <link rel="stylesheet" href="/gbc/css/styles.css"/>
+    <script src="/gbc/js/alpine.min.js"></script>
+    
+    
+    <title>Global Brain Consortium - Network</title>
+  </head>
+  <body x-cloak class="bg-c-bg-l  bg-pattern-2 ">
+    
+
+
+<nav x-data="{ open: false }" @keydown.escape="open = false" class="bg-c-bg-l/50  /50">
+  <div class="mx-5 pt-5">
+  <div class="pb-3 pt-8 px-8 rounded-t-lg mx-auto max-w-screen-xl w-full flex flex-wrap items-center justify-between bg-c-fg1-l">
+  <div class="flex items-center flex-shrink-0 text-gray-600  mr-6">
+    <a href="/gbc/" class="flex items-center">
+    <img src="/gbc/assets/images/logos/gbc-logo.png" class="logo-size">
+</a>
+  </div>
+  <div class="block lg:hidden" aria-controls="navbar-default" aria-expanded="false">
+    <button type="button" @click="open = !open" class="flex items-center h-11 px-3 py-2 border-2 text-gray-400 border-gray-400 hover:text-gray-500 hover:border-gray-500   hover: hover: " :class = "{'border-b-0':open, 'rounded-t-lg':open, 'rounded-lg':!open}">
+      <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+    </button>
+  </div>
+  <div class="w-full border-2 rounded-tl-lg rounded-bl-lg rounded-br-lg border-gray-400  lg:border-0 lg:flex lg:items-center lg:w-auto" :class="{ 'block shadow-3xl': open, 'hidden': !open }">
+    <div class="text-sm lg:block lg:flex-grow">
+      <ul class="flex-row lg:flex">
+        
+        <li>
+          
+          <a  href="/gbc/about/" 
+             
+              class="select-none block md:mx-1 py-3 px-4 pb-4 text-lg rounded-lg lg:text-base lg:text-md lg:inline-block lg:mt-0 text-gray-600  hover:text-gray-800 hover:bg-gray-100">About</a>
+          
+        </li>
+        
+        <li>
+          
+        </li>
+        
+        <li>
+          
+          <a  href="/gbc/projects/" 
+             
+              class="select-none block md:mx-1 py-3 px-4 pb-4 text-lg rounded-lg lg:text-base lg:text-md lg:inline-block lg:mt-0 text-gray-600  hover:text-gray-800 hover:bg-gray-100">Projects</a>
+          
+        </li>
+        
+        <li>
+          
+          <a  href="/gbc/resources/0/" 
+             
+              class="select-none block md:mx-1 py-3 px-4 pb-4 text-lg rounded-lg lg:text-base lg:text-md lg:inline-block lg:mt-0 text-gray-600  hover:text-gray-800 hover:bg-gray-100">News &amp; Events</a>
+          
+        </li>
+        
+        <li>
+          
+          <a  
+              class="select-none block md:mx-1 py-3 px-4 pb-4 text-lg rounded-lg lg:text-base lg:text-md lg:inline-block lg:mt-0 text-gray-600   bg-gray-100" aria-current="page" 
+             >Network</a>
+          
+        </li>
+        
+        <li>
+          
+          <a  href="/gbc/partners/" 
+             
+              class="select-none block md:mx-1 py-3 px-4 pb-4 text-lg rounded-lg lg:text-base lg:text-md lg:inline-block lg:mt-0 text-gray-600  hover:text-gray-800 hover:bg-gray-100">Partners</a>
+          
+        </li>
+        
+        <li>
+          
+          <a  href="/gbc/join/" 
+             
+              class="select-none block md:mx-1 py-3 px-4 pb-4 text-lg rounded-lg lg:text-base lg:text-md lg:inline-block lg:mt-0 text-gray-600  hover:text-gray-800 hover:bg-gray-100">Contact</a>
+          
+        </li>
+        
+      </ul>
+      
+    </div>
+  </div>
+  </div>
+  </div>
+</nav>
+    <div>
+    
+<section class="bg-c-bg-l/50">
+            <div class="mx-5">
+            
+  <div class="bg-c-fg1-l  grid place-content-center max-w-screen-xl px-8 lg:px-16 pt-8 mx-auto lg:pt-12 lg:grid-cols-12">
+    <div class="mr-auto place-self-center lg:col-span-12">
+      <h1
+        class="text-center uppercase text-colour-dark  lg:text-left mb-4 text-3xl/snug font-extrabold tracking-normal md:text-4xl/snug xl:text-5xl/snug ">
+        Our Network</h1>
+      <p
+        class=" text-center lg:text-left mb-5 mt-5 font-light text-colour-dark mx-15 md:mx-5 md:ml-0 md:mr-6 lg:mb-8 md:text-lg/normal lg:text-xl/normal  ">
+        A diverse network of brain researchers, clinicians, and institutions committed to achieving improved and more equitable health outcomes worldwide.
+      </p>
+    </div>
+  </div>
+
+            </div>
+            </section>
+
+<section class="bg-c-bg-l/50">
+            <div class="mx-5">
+            
+<div class="bg-c-fg1-l max-w-screen-xl px-4 py-5 mx-auto lg:px-16 lg:py-8">
+  <div class="max-w-screen-xl px-4 py-6 mx-auto lg:py-6 lg:mt-6 lg:grid-cols-12">
+    <div class="mr-auto place-self-center lg:col-span-10">
+      <h1
+        class="text-center text-colour-dark  lg:text-left mb-16 text-2xl/snug font-extrabold tracking-normal md:text-3xl/snug xl:text-4xl/snug ">
+        GBC Chairs</h1>
+      <div class="flex flex-wrap">
+        
+        
+        
+        <a href="https://mcin.ca" target="_blank" rel="noopener noreferrer">
+          
+          <div class="w-full md:w-full lg:w-1/2 px-3 pb-6 md:px-4 md:pb-8">
+            <div class="grid grid-cols-4  bg-c-bg2-l shadow-lg rounded-lg person-box-title-container p-2">
+              <img class="col-span-1 rounded-full ring-2 ring-white mx-auto my-5 max-w-24 max-h-24"
+                src="/gbc/assets/images/people/alan_evans.jpg"
+                alt="Alan Evans Avatar">
+              <div class="col-span-3 mx-4 my-5 pl-4">
+                <h3 class="mb-3 text-md md:text-left font-bold text-gray-900   person-box-title">
+                  
+                  <span id="alan-evans" class="flex">Alan Evans
+                    <div class="ml-auto self-center">
+                      <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                      </svg>
+                    </div>
+                  </span>
+                  
+        </h3>
+        <p class="md:text-left text-sm text-gray-800  "></p>
+        <p class="md:text-left text-xs text-gray-400 ">McGill University</p>
+      </div>
+    </div>
+    
+    </a>
+    
+  </div>
+  
+  
+        
+        
+          <div class="w-full md:w-full lg:w-1/2 px-3 pb-6 md:px-4 md:pb-8">
+            <div class="grid grid-cols-4  bg-c-bg2-l shadow-lg rounded-lg person-box-title-container p-2">
+              <img class="col-span-1 rounded-full ring-2 ring-white mx-auto my-5 max-w-24 max-h-24"
+                src="/gbc/assets/images/people/pedro_valdes-sosa.jpg"
+                alt="Pedro Valdes-Sosa Avatar">
+              <div class="col-span-3 mx-4 my-5 pl-4">
+                <h3 class="mb-3 text-md md:text-left font-bold text-gray-900   ">
+                  
+                  <p id="pedro-valdes-sosa">Pedro Valdes-Sosa
+        
+        
+        </h3>
+        <p class="md:text-left text-sm text-gray-800  "></p>
+        <p class="md:text-left text-xs text-gray-400 ">CNEURO</p>
+      </div>
+    </div>
+    
+  </div>
+  
+  
+        
+  
+        
+  
+        
+  
+        
+  
+        
+  
+        
+  
+        
+  
+        
+  
+        
+  
+  </div>
+
+  </div>
+  </div>
+  </div>
+
+            </div>
+            </section>
+
+
+<section class="bg-c-bg-l/50">
+            <div class="mx-5">
+            
+<div class="bg-c-fg1-l max-w-screen-xl px-4 py-5 mx-auto lg:px-16">
+  <div class="max-w-screen-xl px-4 mx-auto lg:grid-cols-12" x-data="{selectedExpertise: [&#39;Clinical Trials&#39;,&#39;Ethics&#39;,&#39;Global Health&#39;,&#39;Haptics&#39;,&#39;Medical Imaging&#39;,&#39;Mental Health&#39;,&#39;Neurotechnology&#39;,&#39;Pain&#39;,&#39;Patient and Public Involvement and Engagement&#39;,&#39;Policy&#39;,&#39;Rehabilitation&#39;,&#39;Software&#39;,&#39;Surgery&#39;,&#39;Sustainability&#39;,&#39;Telemedicine&#39;,&#39;Wearable Technology&#39;,&#39;Testing&#39;], deselect(ex) {this.selectedExpertise = this.selectedExpertise.filter(item => item !== ex)}, select(ex) {if(this.selectedExpertise.indexOf(ex)) { this.selectedExpertise.push(ex)}}, isSelected(exList) {return (exList.split(',')).some(v => this.selectedExpertise.includes(v))}}">
+    <div class="mr-auto place-self-center lg:col-span-10">
+      <h1 id="members"
+        class="text-center text-colour-dark  lg:text-left mb-8 text-2xl/snug font-extrabold tracking-normal md:text-3xl/snug xl:text-4xl/snug ">
+        Steering Committee</h1>
+      <!-- <h2
+        class="text-center text-colour-dark  lg:text-left mb-2 text-md/snug tracking-normal md:text-lg/snug xl:text-xl/snug ">
+        Filter by expertise:</h2>
+      <div class="flex flex-wrap justify-center w-full mb-8 px-4 md:justify-start">
+        
+        <button class="rounded-full px-4 py-2 mr-4 my-2 border-2 border-white" x-data="{ active: true }"
+          @click="active ? deselect('Clinical Trials') : select('Clinical Trials'); active = !active"
+          :class="{ 'text-white bg-c-fg3-l ': active,  'bg-gray-100 text-gray-400    ': !active }">Clinical Trials</button>
+        
+        <button class="rounded-full px-4 py-2 mr-4 my-2 border-2 border-white" x-data="{ active: true }"
+          @click="active ? deselect('Ethics') : select('Ethics'); active = !active"
+          :class="{ 'text-white bg-c-fg3-l ': active,  'bg-gray-100 text-gray-400    ': !active }">Ethics</button>
+        
+        <button class="rounded-full px-4 py-2 mr-4 my-2 border-2 border-white" x-data="{ active: true }"
+          @click="active ? deselect('Global Health') : select('Global Health'); active = !active"
+          :class="{ 'text-white bg-c-fg3-l ': active,  'bg-gray-100 text-gray-400    ': !active }">Global Health</button>
+        
+        <button class="rounded-full px-4 py-2 mr-4 my-2 border-2 border-white" x-data="{ active: true }"
+          @click="active ? deselect('Haptics') : select('Haptics'); active = !active"
+          :class="{ 'text-white bg-c-fg3-l ': active,  'bg-gray-100 text-gray-400    ': !active }">Haptics</button>
+        
+        <button class="rounded-full px-4 py-2 mr-4 my-2 border-2 border-white" x-data="{ active: true }"
+          @click="active ? deselect('Medical Imaging') : select('Medical Imaging'); active = !active"
+          :class="{ 'text-white bg-c-fg3-l ': active,  'bg-gray-100 text-gray-400    ': !active }">Medical Imaging</button>
+        
+        <button class="rounded-full px-4 py-2 mr-4 my-2 border-2 border-white" x-data="{ active: true }"
+          @click="active ? deselect('Mental Health') : select('Mental Health'); active = !active"
+          :class="{ 'text-white bg-c-fg3-l ': active,  'bg-gray-100 text-gray-400    ': !active }">Mental Health</button>
+        
+        <button class="rounded-full px-4 py-2 mr-4 my-2 border-2 border-white" x-data="{ active: true }"
+          @click="active ? deselect('Neurotechnology') : select('Neurotechnology'); active = !active"
+          :class="{ 'text-white bg-c-fg3-l ': active,  'bg-gray-100 text-gray-400    ': !active }">Neurotechnology</button>
+        
+        <button class="rounded-full px-4 py-2 mr-4 my-2 border-2 border-white" x-data="{ active: true }"
+          @click="active ? deselect('Pain') : select('Pain'); active = !active"
+          :class="{ 'text-white bg-c-fg3-l ': active,  'bg-gray-100 text-gray-400    ': !active }">Pain</button>
+        
+        <button class="rounded-full px-4 py-2 mr-4 my-2 border-2 border-white" x-data="{ active: true }"
+          @click="active ? deselect('Patient and Public Involvement and Engagement') : select('Patient and Public Involvement and Engagement'); active = !active"
+          :class="{ 'text-white bg-c-fg3-l ': active,  'bg-gray-100 text-gray-400    ': !active }">Patient and Public Involvement and Engagement</button>
+        
+        <button class="rounded-full px-4 py-2 mr-4 my-2 border-2 border-white" x-data="{ active: true }"
+          @click="active ? deselect('Policy') : select('Policy'); active = !active"
+          :class="{ 'text-white bg-c-fg3-l ': active,  'bg-gray-100 text-gray-400    ': !active }">Policy</button>
+        
+        <button class="rounded-full px-4 py-2 mr-4 my-2 border-2 border-white" x-data="{ active: true }"
+          @click="active ? deselect('Rehabilitation') : select('Rehabilitation'); active = !active"
+          :class="{ 'text-white bg-c-fg3-l ': active,  'bg-gray-100 text-gray-400    ': !active }">Rehabilitation</button>
+        
+        <button class="rounded-full px-4 py-2 mr-4 my-2 border-2 border-white" x-data="{ active: true }"
+          @click="active ? deselect('Software') : select('Software'); active = !active"
+          :class="{ 'text-white bg-c-fg3-l ': active,  'bg-gray-100 text-gray-400    ': !active }">Software</button>
+        
+        <button class="rounded-full px-4 py-2 mr-4 my-2 border-2 border-white" x-data="{ active: true }"
+          @click="active ? deselect('Surgery') : select('Surgery'); active = !active"
+          :class="{ 'text-white bg-c-fg3-l ': active,  'bg-gray-100 text-gray-400    ': !active }">Surgery</button>
+        
+        <button class="rounded-full px-4 py-2 mr-4 my-2 border-2 border-white" x-data="{ active: true }"
+          @click="active ? deselect('Sustainability') : select('Sustainability'); active = !active"
+          :class="{ 'text-white bg-c-fg3-l ': active,  'bg-gray-100 text-gray-400    ': !active }">Sustainability</button>
+        
+        <button class="rounded-full px-4 py-2 mr-4 my-2 border-2 border-white" x-data="{ active: true }"
+          @click="active ? deselect('Telemedicine') : select('Telemedicine'); active = !active"
+          :class="{ 'text-white bg-c-fg3-l ': active,  'bg-gray-100 text-gray-400    ': !active }">Telemedicine</button>
+        
+        <button class="rounded-full px-4 py-2 mr-4 my-2 border-2 border-white" x-data="{ active: true }"
+          @click="active ? deselect('Wearable Technology') : select('Wearable Technology'); active = !active"
+          :class="{ 'text-white bg-c-fg3-l ': active,  'bg-gray-100 text-gray-400    ': !active }">Wearable Technology</button>
+        
+        <button class="rounded-full px-4 py-2 mr-4 my-2 border-2 border-white" x-data="{ active: true }"
+          @click="active ? deselect('Testing') : select('Testing'); active = !active"
+          :class="{ 'text-white bg-c-fg3-l ': active,  'bg-gray-100 text-gray-400    ': !active }">Testing</button>
+        
+      </div> -->
+      <div class="flex flex-wrap">
+        
+        
+      
+        
+      
+        
+        <div class="w-full sm:w-1/2 lg:w-1/3 px-3 pb-6 md:px-4 md:pb-8"
+          x-data="{personExpertise: 'Clinical Trials,Ethics'}" x-show="isSelected(personExpertise)">
+          
+            <div class="grid grid-cols-4  bg-c-bg2-l shadow-lg rounded-lg person-box-title-container p-2">
+              <img class="col-span-1 rounded-full ring-2 ring-white mx-auto my-5 max-w-24 max-h-24"
+                src="/gbc/assets/images/people/katrin_amunts.jpg"
+                alt="Katrin Amunts Avatar">
+              <div class="col-span-3 mx-4 my-5 pl-4">
+                <h3
+                  class="mb-3 text-md md:text-left font-bold text-gray-900   ">
+                  
+                  <p id="katrin-amunts">Katrin Amunts</p>
+                  
+                </h3>
+                <p class="md:text-left text-sm text-gray-800  "></p>
+                <p class="md:text-left text-xs text-gray-400 ">Julich</p>
+              </div>            
+          </div>     
+             
+      </div>
+      
+      
+        
+        <div class="w-full sm:w-1/2 lg:w-1/3 px-3 pb-6 md:px-4 md:pb-8"
+          x-data="{personExpertise: 'Clinical Trials,Ethics'}" x-show="isSelected(personExpertise)">
+          
+            <div class="grid grid-cols-4  bg-c-bg2-l shadow-lg rounded-lg person-box-title-container p-2">
+              <img class="col-span-1 rounded-full ring-2 ring-white mx-auto my-5 max-w-24 max-h-24"
+                src="/gbc/assets/images/people/photoBosch.jpg"
+                alt="Jorge Bosch-Bayard Avatar">
+              <div class="col-span-3 mx-4 my-5 pl-4">
+                <h3
+                  class="mb-3 text-md md:text-left font-bold text-gray-900   ">
+                  
+                  <p id="jorge-bosch-bayard">Jorge Bosch-Bayard</p>
+                  
+                </h3>
+                <p class="md:text-left text-sm text-gray-800  "></p>
+                <p class="md:text-left text-xs text-gray-400 ">Autonomous University of Madrid, Spain</p>
+              </div>            
+          </div>     
+             
+      </div>
+      
+      
+        
+        <div class="w-full sm:w-1/2 lg:w-1/3 px-3 pb-6 md:px-4 md:pb-8"
+          x-data="{personExpertise: 'Clinical Trials,Ethics'}" x-show="isSelected(personExpertise)">
+          
+            <div class="grid grid-cols-4  bg-c-bg2-l shadow-lg rounded-lg person-box-title-container p-2">
+              <img class="col-span-1 rounded-full ring-2 ring-white mx-auto my-5 max-w-24 max-h-24"
+                src="/gbc/assets/images/people/maryann_martone.jpg"
+                alt="Maryann Martone Avatar">
+              <div class="col-span-3 mx-4 my-5 pl-4">
+                <h3
+                  class="mb-3 text-md md:text-left font-bold text-gray-900   ">
+                  
+                  <p id="maryann-martone">Maryann Martone</p>
+                  
+                </h3>
+                <p class="md:text-left text-sm text-gray-800  "></p>
+                <p class="md:text-left text-xs text-gray-400 ">UCSD</p>
+              </div>            
+          </div>     
+             
+      </div>
+      
+      
+        
+        <div class="w-full sm:w-1/2 lg:w-1/3 px-3 pb-6 md:px-4 md:pb-8"
+          x-data="{personExpertise: 'Clinical Trials,Ethics'}" x-show="isSelected(personExpertise)">
+          
+            <div class="grid grid-cols-4  bg-c-bg2-l shadow-lg rounded-lg person-box-title-container p-2">
+              <img class="col-span-1 rounded-full ring-2 ring-white mx-auto my-5 max-w-24 max-h-24"
+                src="/gbc/assets/images/people/milham.jpg"
+                alt="Michael Milham Avatar">
+              <div class="col-span-3 mx-4 my-5 pl-4">
+                <h3
+                  class="mb-3 text-md md:text-left font-bold text-gray-900   ">
+                  
+                  <p id="michael-milham">Michael Milham</p>
+                  
+                </h3>
+                <p class="md:text-left text-sm text-gray-800  "></p>
+                <p class="md:text-left text-xs text-gray-400 ">The Child Mind Institute</p>
+              </div>            
+          </div>     
+             
+      </div>
+      
+      
+        
+        <div class="w-full sm:w-1/2 lg:w-1/3 px-3 pb-6 md:px-4 md:pb-8"
+          x-data="{personExpertise: 'Clinical Trials,Ethics'}" x-show="isSelected(personExpertise)">
+          
+          <a href="https://medicinehealth.leeds.ac.uk/psychology/staff/632/dr-faisal-mushtaq" target="_blank" rel="noopener noreferrer">
+          
+            <div class="grid grid-cols-4  bg-c-bg2-l shadow-lg rounded-lg person-box-title-container p-2">
+              <img class="col-span-1 rounded-full ring-2 ring-white mx-auto my-5 max-w-24 max-h-24"
+                src="/gbc/assets/images/people/photo-faisal.jpg"
+                alt="Faisal Mushtaq Avatar">
+              <div class="col-span-3 mx-4 my-5 pl-4">
+                <h3
+                  class="mb-3 text-md md:text-left font-bold text-gray-900   person-box-title">
+                  
+                  <span id="faisal-mushtaq" class="flex">Faisal Mushtaq
+                    <div class="ml-auto self-center">
+                      <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                      </svg>
+                    </div>
+                  </span>
+                  
+                </h3>
+                <p class="md:text-left text-sm text-gray-800  "></p>
+                <p class="md:text-left text-xs text-gray-400 ">University of Leeds</p>
+              </div>            
+          </div>     
+          
+          </a>
+             
+      </div>
+      
+      
+        
+        <div class="w-full sm:w-1/2 lg:w-1/3 px-3 pb-6 md:px-4 md:pb-8"
+          x-data="{personExpertise: 'Clinical Trials,Ethics'}" x-show="isSelected(personExpertise)">
+          
+            <div class="grid grid-cols-4  bg-c-bg2-l shadow-lg rounded-lg person-box-title-container p-2">
+              <img class="col-span-1 rounded-full ring-2 ring-white mx-auto my-5 max-w-24 max-h-24"
+                src="/gbc/assets/images/people/jane_roskams.jpg"
+                alt="Jane Roskams Avatar">
+              <div class="col-span-3 mx-4 my-5 pl-4">
+                <h3
+                  class="mb-3 text-md md:text-left font-bold text-gray-900   ">
+                  
+                  <p id="jane-roskams">Jane Roskams</p>
+                  
+                </h3>
+                <p class="md:text-left text-sm text-gray-800  "></p>
+                <p class="md:text-left text-xs text-gray-400 ">UBC</p>
+              </div>            
+          </div>     
+             
+      </div>
+      
+      
+        
+        <div class="w-full sm:w-1/2 lg:w-1/3 px-3 pb-6 md:px-4 md:pb-8"
+          x-data="{personExpertise: 'Clinical Trials,Ethics'}" x-show="isSelected(personExpertise)">
+          
+            <div class="grid grid-cols-4  bg-c-bg2-l shadow-lg rounded-lg person-box-title-container p-2">
+              <img class="col-span-1 rounded-full ring-2 ring-white mx-auto my-5 max-w-24 max-h-24"
+                src="/gbc/assets/images/people/rossini.jpg"
+                alt="Paolo Rossini Avatar">
+              <div class="col-span-3 mx-4 my-5 pl-4">
+                <h3
+                  class="mb-3 text-md md:text-left font-bold text-gray-900   ">
+                  
+                  <p id="paolo-rossini">Paolo Rossini</p>
+                  
+                </h3>
+                <p class="md:text-left text-sm text-gray-800  "></p>
+                <p class="md:text-left text-xs text-gray-400 ">IFCN</p>
+              </div>            
+          </div>     
+             
+      </div>
+      
+      
+        
+        <div class="w-full sm:w-1/2 lg:w-1/3 px-3 pb-6 md:px-4 md:pb-8"
+          x-data="{personExpertise: 'Clinical Trials,Ethics'}" x-show="isSelected(personExpertise)">
+          
+            <div class="grid grid-cols-4  bg-c-bg2-l shadow-lg rounded-lg person-box-title-container p-2">
+              <img class="col-span-1 rounded-full ring-2 ring-white mx-auto my-5 max-w-24 max-h-24"
+                src="/gbc/assets/images/people/paul_thompson.jpg"
+                alt="Paul Thompson Avatar">
+              <div class="col-span-3 mx-4 my-5 pl-4">
+                <h3
+                  class="mb-3 text-md md:text-left font-bold text-gray-900   ">
+                  
+                  <p id="paul-thompson">Paul Thompson</p>
+                  
+                </h3>
+                <p class="md:text-left text-sm text-gray-800  "></p>
+                <p class="md:text-left text-xs text-gray-400 ">USC</p>
+              </div>            
+          </div>     
+             
+      </div>
+      
+      
+        
+        <div class="w-full sm:w-1/2 lg:w-1/3 px-3 pb-6 md:px-4 md:pb-8"
+          x-data="{personExpertise: 'Clinical Trials,Ethics'}" x-show="isSelected(personExpertise)">
+          
+            <div class="grid grid-cols-4  bg-c-bg2-l shadow-lg rounded-lg person-box-title-container p-2">
+              <img class="col-span-1 rounded-full ring-2 ring-white mx-auto my-5 max-w-24 max-h-24"
+                src="/gbc/assets/images/people/dezhong_yao.jpg"
+                alt="Dezhong Yao Avatar">
+              <div class="col-span-3 mx-4 my-5 pl-4">
+                <h3
+                  class="mb-3 text-md md:text-left font-bold text-gray-900   ">
+                  
+                  <p id="dezhong-yao">Dezhong Yao</p>
+                  
+                </h3>
+                <p class="md:text-left text-sm text-gray-800  "></p>
+                <p class="md:text-left text-xs text-gray-400 ">UESTC</p>
+              </div>            
+          </div>     
+             
+      </div>
+      
+      
+    </div>
+
+  </div>
+  </div>
+</div>
+
+            </div>
+            </section>
+
+    </div>
+    
+<footer class="bg-c-bg-l/50  /50">
+  <div class="mx-5">
+  <div class="pb-3 pt-8 px-8 rounded-b-lg mx-auto max-w-screen-xl w-full flex flex-wrap items-center justify-between bg-c-fg1-l">
+  </div> 
+    <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+      <span class="text-sm text-gray-500 sm:text-center  ">Copyright © 2024 <a href="/gbc/" class="hover:underline">Global Brain Consortium</a>
+    </span>
+      <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500  sm:mt-0">
+        
+          <li>
+            
+            <a  href="/gbc/about/" 
+              
+               class="select-none block hover:underline me-4 md:me-6">About</a>
+            
+          </li>
+          
+          <li>
+            
+          </li>
+          
+          <li>
+            
+            <a  href="/gbc/projects/" 
+              
+               class="select-none block hover:underline me-4 md:me-6">Projects</a>
+            
+          </li>
+          
+          <li>
+            
+            <a  href="/gbc/resources/0/" 
+              
+               class="select-none block hover:underline me-4 md:me-6">News &amp; Events</a>
+            
+          </li>
+          
+          <li>
+            
+            <a  
+               class="select-none block underline me-4 md:me-6" aria-current="page" 
+              >Network</a>
+            
+          </li>
+          
+          <li>
+            
+            <a  href="/gbc/partners/" 
+              
+               class="select-none block hover:underline me-4 md:me-6">Partners</a>
+            
+          </li>
+          
+          <li>
+            
+            <a  href="/gbc/join/" 
+              
+               class="select-none block hover:underline me-4 md:me-6">Contact</a>
+            
+          </li>
+          
+      </ul>
+    </div>
+  </div>
+</footer>
+
+  </body>
+</html>
