@@ -1,0 +1,36 @@
+{% set navPages = collections.all | eleventyNavigation %}
+
+
+<nav x-data="{ open: false }" @keydown.escape="open = false" class="bg-c-bg-l/50  /50">
+  <div class="mx-5 pt-5">
+  <div class="pb-3 pt-8 px-8 rounded-t-lg mx-auto max-w-screen-xl w-full flex flex-wrap items-center justify-between bg-c-fg1-l">
+  <div class="flex items-center flex-shrink-0 text-gray-600  mr-6">
+    {% include "components/logo.njk" %}
+  </div>
+  <div class="block lg:hidden" aria-controls="navbar-default" aria-expanded="false">
+    <button type="button" @click="open = !open" class="flex items-center h-11 px-3 py-2 border-2 text-gray-400 border-gray-400 hover:text-gray-500 hover:border-gray-500   hover: hover: " :class = "{'border-b-0':open, 'rounded-t-lg':open, 'rounded-lg':!open}">
+      <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+    </button>
+  </div>
+  <div class="w-full border-2 rounded-tl-lg rounded-bl-lg rounded-br-lg border-gray-400  lg:border-0 lg:flex lg:items-center lg:w-auto" :class="{ 'block shadow-3xl': open, 'hidden': !open }">
+    <div class="text-sm lg:block lg:flex-grow">
+      <ul class="flex-row lg:flex">
+        {% for entry in navPages %}
+        <li>
+          {% if entry.url != "/" %}
+          <a {% if page.url != entry.url %} href="{{ entry.url | url }}"{% endif %} 
+             {% if page.url == entry.url %} class="select-none block md:mx-1 py-3 px-4 pb-4 text-lg rounded-lg lg:text-base lg:text-md lg:inline-block lg:mt-0 text-gray-600   bg-gray-100" aria-current="page" {% endif %}
+             {% if page.url != entry.url %} class="select-none block md:mx-1 py-3 px-4 pb-4 text-lg rounded-lg lg:text-base lg:text-md lg:inline-block lg:mt-0 text-gray-600  hover:text-gray-800 hover:bg-gray-100"{% endif %}>{{ entry.title }}</a>
+          {%endif%}
+        </li>
+        {% endfor %}
+      </ul>
+      
+    </div>
+  </div>
+  </div>
+  </div>
+</nav>

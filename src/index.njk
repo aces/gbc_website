@@ -1,0 +1,107 @@
+---
+layout: layouts/main.njk
+title: Global Brain Consortium - Home
+eleventyNavigation:
+    key: home
+    title: Home
+    order: 1
+---
+
+{% row %}
+    <div class="bg-c-fg1-l grid place-content-center max-w-screen-xl mx-auto lg:py-12 lg:grid-cols-12 overflow-hidden video-container h-full">
+        <div class="bg-white-transparent absolute w-full h-full z-10">
+        </div>    
+        <div class="place-self-center lg:col-span-8 xl:col-span-6 mx-8 my-8 px-8 z-20 py-8 overflow-hidden bg-white/80">
+            <h1
+                class="text-center uppercase text-colour-dark  lg:text-left mb-4 text-3xl/snug font-extrabold tracking-normal md:text-4xl/snug xl:text-5xl/snug ">
+                Global Brain Consortium</h1>
+            <p
+                class=" text-center lg:text-left mb-5 mt-5 font-light text-colour-dark mx-15 md:mx-5 md:ml-0 md:mr-6 lg:mb-8 md:text-lg/normal lg:text-xl/normal  ">
+                A diverse network of brain researchers, clinicians, and institutions committed to achieving improved and more equitable health outcomes worldwide.
+            </p>
+            <div class="flex mx-auto justify-center md:justify-start">
+            <a href="{{'/about/' | url}}" class=" mx-auto lg:mx-0 md:mt-5 button-square-primary new-button ">
+                    Our Mission
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+                        stroke="currentColor" class="w-5 h-5 ml-2 -mr-1">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+     
+        <div class="hero-image">
+            <img src="{{'/assets/images/content/gbc-bg-big-crop.png' | url}}">
+        </div>
+    </div>
+{% endrow %}
+
+
+{% row %}
+    <div class="bg-c-fg2-l   grid place-content-center max-w-screen-xl px-4 py-8 mx-auto lg:py-16 lg:grid-cols-12">
+        <div class="px-10 py-2 max-w-sm md:max-w-md lg:mt-0 lg:col-span-4 place-self-center mx-auto ">
+            <img src="{{'/assets/images/content/gbc-bg.png' | url}}">
+        </div>
+        <div class="mr-auto px-2 place-self-center lg:col-span-8">
+            <p
+                class="select-none text-center lg:text-left mb-5 mt-5 font-light text-white mx-15 md:mx-5 md:ml-10 lg:mb-8 md:text-lg/normal lg:text-xl/normal  ">
+                The Global Brain Consortium builds collaborative and dynamic relationships among globally-oriented health researchers.
+            </p>
+            <p
+                class="select-none text-center lg:text-left mb-5 mt-5 font-light text-white mx-15 md:mx-5 md:ml-10 lg:mb-8 md:text-lg/normal lg:text-xl/normal  ">
+                Our mission is to address the challenges that need to be overcome to drive multinational collaborative efforts in support of Global Precision Brain Health by strengthening linkages between neuroscientists across borders and disciplines.
+            </p>
+            <div class="flex mx-auto justify-center md:justify-start mx-15 md:mx-5 md:ml-10">
+                <a href="{{'/resources/0/' | url}}" class=" mx-auto lg:mx-0 md:mt-5 button-square-primary  ">
+                    News & Events
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+                        stroke="currentColor" class="w-5 h-5 ml-2 -mr-1">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+{% endrow %}
+
+
+{% row %}
+    <!-- <div
+        class="bg-c-fg1-l  grid grid-rows-2 lg:grid-rows-1 grid-cols-2 place-content-center max-w-screen-xl px-4 py-8 mx-auto lg:py-16 lg:grid-cols-4"> -->
+        <!-- <a href="{{'/network' | url}}" class="max-w-sm w-full p-6 lg:mt-0 mx-auto col-span-1 place-content-top">
+            <div class="bg-c-fg2-l  rounded-lg w-full h-full solid-shadow hover:solid-shadow-dk relative  py-4 px-4 md:py-8 md:px-8">
+                <p class="text-white text-4xl text-center">{{people.length}}</p>
+                <p class="text-white pt-2 md:text-lg text-sm text-center">Members</p>
+            </div>
+        </a>-->
+
+        <!-- <a href="{{'/network' | url}}" class="max-w-sm w-full p-6 lg:mt-0 mx-auto col-span-1 place-content-top">
+            <div class="bg-c-fg2-l  rounded-lg w-full h-full solid-shadow hover:solid-shadow-dk relative  py-4 px-4 md:py-8 md:px-8">
+                <p class="text-white text-4xl text-center">{{eleventyComputed.peopleAffiliationsCount}}</p>
+                <p class="text-white pt-2 text-lg md:text-lg text-sm text-center">Institutions</p>
+            </div>
+        </a>-->
+
+        <!-- <a href="{{'/network#members' | url}}" class="max-w-sm w-full p-6 lg:mt-0 mx-auto col-span-1 place-content-top">
+            <div class="bg-c-fg2-l  rounded-lg w-full h-full solid-shadow hover:solid-shadow-dk relative  py-4 px-4 md:py-8 md:px-8">
+                <p class="text-white  text-4xl text-center">{{eleventyComputed.peopleExpertiseCount}}</p>
+                <p class="text-white  pt-2 text-lg md:text-lg text-sm text-center">Areas of Expertise</p>
+            </div>
+        </a>-->
+
+        <!-- <a href="{{'/network' | url}}" class="max-w-sm w-full p-6 lg:mt-0 mx-auto col-span-1 place-content-top">
+            <div class="bg-colour-4  bg-[url('{{'/assets/images/content/bg-mesh2.png' | url }}')] bg-no-repeat bg-left-top bg-cover w-full h-full solid-shadow hover:solid-shadow-dk  py-4 px-4 md:py-8 md:px-8">
+                <p class="text-white text-3xl">{{eleventyComputed.steeringGroupMemberPaperCount.message.total-results}}+</p>
+                <p class="text-white pt-2 text-lg md:text-lg text-sm">Member Publications</p>
+            </div>
+        </a> -->
+
+        <!-- <a href="{{'/resources/0/' | url}}" class="max-w-sm w-full p-6 lg:mt-0 mx-auto col-span-1 place-content-top">
+            <div class="bg-c-fg3-l  rounded-lg w-full h-full solid-shadow hover:solid-shadow-dk relative  py-4 px-4 md:py-8 md:px-8">
+                <p class="text-white text-4xl text-center">{{collections.resource.length}}+</p>
+                <p class="text-white pt-2 text-lg md:text-lg text-sm text-center">Resources</p>
+            </div>
+        </a> -->       
+    <!-- </div> -->
+    <!-- test -->
+{% endrow %}
+

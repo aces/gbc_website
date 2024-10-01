@@ -1,0 +1,21 @@
+---
+layout: layouts/main.njk
+tags: resource
+---
+
+<section
+  class="bg-white  bg-pattern-1  my-12">
+  <div class="max-w-screen-xl px-4 py-8 mx-auto lg:py-12 lg:mt-12">
+    <div class="mr-auto">
+      <h1
+        class="text-center uppercase text-colour-dark  lg:text-left mb-4 text-3xl/snug font-extrabold tracking-normal md:text-4xl/snug xl:text-5xl/snug ">
+        {{title}}</h1>
+    </div>
+  </div>
+</section>
+
+<section class="bg-white  my-12">
+    <div class="max-w-screen-xl px-4 py-8 mx-auto lg:py-12 lg:mt-12">
+        {{ content | safe }}
+    </div>
+</section>

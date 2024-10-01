@@ -1,0 +1,22 @@
+{% set navPages = collections.all | eleventyNavigation %}
+<footer class="bg-c-bg-l/50  /50">
+  <div class="mx-5">
+  <div class="pb-3 pt-8 px-8 rounded-b-lg mx-auto max-w-screen-xl w-full flex flex-wrap items-center justify-between bg-c-fg1-l">
+  </div> 
+    <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+      <span class="text-sm text-gray-500 sm:text-center  ">Copyright © {{eleventyComputed.currentYear}} <a href="{{'/' | url}}" class="hover:underline">Global Brain Consortium</a>
+    </span>
+      <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500  sm:mt-0">
+        {% for entry in navPages %}
+          <li>
+            {% if entry.url != "/" %}
+            <a {% if page.url != entry.url %} href="{{ entry.url | url }}"{% endif %} 
+              {% if page.url == entry.url %} class="select-none block underline me-4 md:me-6" aria-current="page" {% endif %}
+              {% if page.url != entry.url %} class="select-none block hover:underline me-4 md:me-6"{% endif %}>{{ entry.title }}</a>
+            {%endif%}
+          </li>
+          {% endfor %}
+      </ul>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,215 @@
+---
+title: Global Brain Consortium - Global EEG Norms
+description: About the Global EEG Norms
+layout: layouts/main.njk
+---
+
+{% row %}
+  <div class="bg-c-fg1-l  grid place-content-center max-w-screen-xl px-8 lg:px-16 pt-8 mx-auto lg:pt-12 lg:grid-cols-12">
+    <div class="mr-auto place-self-center lg:col-span-12">
+      <h1
+        class="text-center uppercase text-colour-dark  lg:text-left mb-4 text-3xl/snug font-extrabold tracking-normal md:text-4xl/snug xl:text-5xl/snug ">
+        Global EEG Norms</h1>
+
+      <img src={{"/assets/images/content/projects/norms-globalmap.jpg" | url}} alt="Banner image of the 2024 GBC Assembly'">
+
+      <h2 class="text-center text-colour-dark lg:text-left mb-10 text-2xl/snug font-extrabold tracking-normal md:text-3xl/snug xl:text-4xl/snug ">
+      Overview</h2>
+
+      
+
+      <p
+        class=" text-center lg:text-left mb-8 mt-5 font-light text-colour-dark mx-15 md:mx-5 md:ml-0 md:mr-6 lg:mb-8 md:text-lg/normal lg:text-xl/normal  ">
+        This project is a multi-national EEG normative initiative for creating international standards for MEEG analysis, under the focus of the Global Brain Consortium (GBC). The initiative is led by Dr. Pedro Valdes-Sosa, at the University of Electronic Science and Technology of China (UESTC) and it joins several scientists all around the world.
+      </p>
+
+      <h3 class="text-center text-colour-dark lg:text-left mb-10 text-2xl/snug font-extrabold tracking-normal md:text-2xl/snug xl:text-3xl/snug ">
+      Background</h3>
+
+      <p
+        class=" text-center lg:text-left mb-8 mt-5 font-light text-colour-dark mx-15 md:mx-5 md:ml-0 md:mr-6 lg:mb-8 md:text-lg/normal lg:text-xl/normal  ">
+        The pilot phase of the project started in March 2021. This initial proof of concept aims to calculate populational normative descriptors at the scalp level and with a reduced set of 19 electrodes of the international 1020 system.
+      </p>
+      <p
+        class=" text-center lg:text-left mb-8 mt-5 font-light text-colour-dark mx-15 md:mx-5 md:ml-0 md:mr-6 lg:mb-8 md:text-lg/normal lg:text-xl/normal  ">
+        Resting state (eyes closed) EEG data from 1586 healthy subjects have been collected from 15 research groups, located in 9 countries across the Americas, Europe, and Asia.
+      </p>
+      
+      <p
+        class=" text-center lg:text-left mb-8 mt-5 font-bold text-colour-dark mx-15 md:mx-5 md:ml-0 md:mr-6 lg:mb-8 md:text-lg/normal lg:text-xl/normal  ">
+        Data Cohorts
+      </p>
+      <ul class="list-disc list-outside font-light text-colour-dark mx-15 md:mx-5 md:ml-6 md:mr-6 lg:mb-8 md:text-lg/normal lg:text-xl/normal  ">
+        <li>Barbados</li>
+        <li>China</li>
+        <li>Columbia</li>
+        <li>Cuba</li>
+        <li>Germany</li>
+        <li>Malaysia</li>
+        <li>Russia</li>
+        <li>Switzerland</li>
+        <li>USA</li>
+      </ul>
+
+      <h2 class="text-center text-colour-dark lg:text-left mb-10 text-2xl/snug font-extrabold tracking-normal md:text-3xl/snug xl:text-4xl/snug ">
+      Goals</h2>
+
+      <p
+        class=" text-center lg:text-left mb-8 mt-5 font-bold text-colour-dark mx-15 md:mx-5 md:ml-0 md:mr-6 lg:mb-8 md:text-lg/normal lg:text-xl/normal  ">
+        Creating Signatures to describe EEG activity
+      </p>
+      <ul class="list-disc list-outside font-light text-colour-dark mx-15 md:mx-5 md:ml-6 md:mr-6 lg:mb-8 md:text-lg/normal lg:text-xl/normal  ">
+        <li>Create “qEEG signature” descriptors of EEG spectra maturation for a narrow frequency range across ages in large populations, examining factors such as ethnicity, culture, sex and other socio-economical indices.</li>
+        <li>Developing methodologies for data harmonization across cohorts</li>
+      </ul>
+
+      <p
+        class=" text-center lg:text-left mb-8 mt-5 font-bold text-colour-dark mx-15 md:mx-5 md:ml-0 md:mr-6 lg:mb-8 md:text-lg/normal lg:text-xl/normal  ">
+        Data Standardization and Quality Control
+      </p>
+      <ul class="list-disc list-outside font-light text-colour-dark mx-15 md:mx-5 md:ml-6 md:mr-6 lg:mb-8 md:text-lg/normal lg:text-xl/normal m-2 ml-6">
+        <li>Validating and standardizing EEG preprocessing toolboxes for clean-EEG selection (e.g., artifact rejection).</li>
+        <li>Data harmonization for conjoint use of EEG recordings gathered with different devices, technical conditions, and countries.</li>
+        <li>Creating Quality Control mechanisms for accessing data quality and validity, as well as automatic preprocessing algorithms performance.</li>
+        <li>Development of methods for automatic detection of outliers, to assess signal quality.</li>
+        <li>Multivariate measurements for the comparison of different EEG cohorts.</li>
+      </ul>
+
+      <p
+        class=" text-center lg:text-left mb-8 mt-5 font-bold text-colour-dark mx-15 md:mx-5 md:ml-0 md:mr-6 lg:mb-8 md:text-lg/normal lg:text-xl/normal  ">
+        Novel Normative Methodologies
+      </p>
+      <ul class="list-disc list-outside font-light text-colour-dark mx-15 md:mx-5 md:ml-6 md:mr-6 lg:mb-8 md:text-lg/normal lg:text-xl/normal m-2 ml-6">
+        <li>Metrics for assessing deviations from normality.</li>
+        <li>Multivariate methodologies to calculate normative regressions for MEEG data, and to create normative surfaces, rather than single variable norms.</li>
+        <li>Methods for estimating the spectra at the MEEG sources, more appropriate for connectivity analysis.</li>
+        <li>Calculation of normative parameters both at the scalp and the sources, in the whole frequency range, for different inverse estimators.</li>
+      </ul>
+
+    </div>
+  </div>
+{% endrow %}
+
+{% row %}
+    <div class="bg-c-fg2-l   grid place-content-center max-w-screen-xl px-4 py-8 mx-auto lg:py-16 lg:grid-cols-12">
+        <div class="mr-auto px-2 place-self-center lg:col-span-12">
+          <h2 class="text-center text-white lg:text-left mb-10 text-2xl/snug font-extrabold tracking-normal md:text-3xl/snug xl:text-4xl/snug md:ml-10">
+          Participants</h2>
+            <p
+                class="select-none text-center lg:text-left mb-5 mt-5 font-bold text-white mx-15 md:mx-5 md:ml-10 lg:mb-0 md:text-lg/normal lg:text-xl/normal  ">
+                University of Electronic Science and Technology of China (UESTC), China
+                <div class="flex flex-wrap justify-start md:ml-10 text-white">
+                  <div class="p-2">Pedro A. Valdes-Sosa</div>
+                  <div class="p-2">Deirel Paz-Linares</div>
+                  <div class="p-2">Shiang Hu</div>
+                  <div class="p-2">Min Li</div>
+                  <div class="p-2">Maria L. Bringas-Vega</div>
+                  <div class="p-2">Ariosky Areces-Gonzalez</div>
+                  <div class="p-2">Xu Lei</div>
+                  <div class="p-2">Rigel Wang</div>
+                  <div class="p-2">Dezhong Yao</div>
+                  <div class="p-2">Ying Wang</div>
+                </div>
+            </p>
+            <p
+                class="select-none text-center lg:text-left mb-5 mt-5 font-bold text-white mx-15 md:mx-5 md:ml-10 lg:mb-0 md:text-lg/normal lg:text-xl/normal  ">
+                Montreal Neurological Institute, Canada
+                <div class="flex flex-wrap justify-start md:ml-10 text-white">
+                  <div class="p-2">Alan C. Evans</div>
+                  <div class="p-2">Jorge F. Bosch-Bayard</div>
+                  <div class="p-2">Christine Rogers</div>
+                </div>
+            </p>
+            <p
+                class="select-none text-center lg:text-left mb-5 mt-5 font-bold text-white mx-15 md:mx-5 md:ml-10 lg:mb-0 md:text-lg/normal lg:text-xl/normal  ">
+                Cuban Neuroscience Center (CNeuro), Cuba
+                <div class="flex flex-wrap justify-start md:ml-10 text-white">
+                  <div class="p-2">Lidice Galan-Garcia</div>
+                  <div class="p-2">Mitchell J. Valdes-Sosa</div>
+                  <div class="p-2">Ana Calzada Reyes</div>
+                  <div class="p-2">Trinidad A. Virues-Alba</div>
+                  <div class="p-2">Eduardo Aubert-Vazquez</div>
+                </div>
+            </p>
+            <p
+                class="select-none text-center lg:text-left mb-5 mt-5 font-bold text-white mx-15 md:mx-5 md:ml-10 lg:mb-0 md:text-lg/normal lg:text-xl/normal  ">
+                Federal Research Center for Information and Computational Technologies, Russia
+                <div class="flex flex-wrap justify-start md:ml-10 text-white">
+                  <div class="p-2">Pavel Rudych</div>
+                </div>
+            </p>
+            <p
+                class="select-none text-center lg:text-left mb-5 mt-5 font-bold text-white mx-15 md:mx-5 md:ml-10 lg:mb-0 md:text-lg/normal lg:text-xl/normal  ">
+                Institute of Cytology and Genetics Siberian Branch, Russia
+                <div class="flex flex-wrap justify-start md:ml-10 text-white">
+                  <div class="p-2">Alexander N. Savostyanov</div>
+                  <div class="p-2">Nataliya S. Milakhina</div>
+                </div>
+            </p>
+            <p
+                class="select-none text-center lg:text-left mb-5 mt-5 font-bold text-white mx-15 md:mx-5 md:ml-10 lg:mb-0 md:text-lg/normal lg:text-xl/normal  ">
+                Universidad de Antioquia, Colombia
+                <div class="flex flex-wrap justify-start md:ml-10 text-white">
+                  <div class="p-2">Carlos A. Tobon-Quintero</div>
+                  <div class="p-2">John F. Ochoa-Gomez</div>
+                </div>
+            </p>
+            <p
+                class="select-none text-center lg:text-left mb-5 mt-5 font-bold text-white mx-15 md:mx-5 md:ml-10 lg:mb-0 md:text-lg/normal lg:text-xl/normal  ">
+                Universiti Sains Malaysia, Malaysia
+                <div class="flex flex-wrap justify-start md:ml-10 text-white">
+                  <div class="p-2">Mohd Faizal</div>
+                  <div class="p-2">Mohd Zulkifly</div>
+                  <div class="p-2">Jafri Malin Abdullah</div>
+                  <div class="p-2">Hazim Omar</div>
+                  <div class="p-2">Muhammad R. Abdul Rahman</div>
+                  <div class="p-2">Aini Ismafairus Abd Hamid</div>
+                  <div class="p-2">Faruque Reza</div>
+                </div>
+            </p>
+            <p
+                class="select-none text-center lg:text-left mb-5 mt-5 font-bold text-white mx-15 md:mx-5 md:ml-10 lg:mb-0 md:text-lg/normal lg:text-xl/normal  ">
+                University of Zurich, Switzerland
+                <div class="flex flex-wrap justify-start md:ml-10 text-white">
+                  <div class="p-2">Marius Tröndle</div>
+                  <div class="p-2">Nicolas Langer</div>
+                </div>
+            </p>
+            <p
+                class="select-none text-center lg:text-left mb-5 mt-5 font-bold text-white mx-15 md:mx-5 md:ml-10 lg:mb-0 md:text-lg/normal lg:text-xl/normal  ">
+                University Hospital of Clinical Psychiatry, Bern, Switzerland
+                <div class="flex flex-wrap justify-start md:ml-10 text-white">
+                  <div class="p-2">Thomas Koenig</div>
+                </div>
+            </p>
+            <p
+                class="select-none text-center lg:text-left mb-5 mt-5 font-bold text-white mx-15 md:mx-5 md:ml-10 lg:mb-0 md:text-lg/normal lg:text-xl/normal  ">
+                Brain Research Laboratories, New York University, USA
+                <div class="flex flex-wrap justify-start md:ml-10 text-white">
+                  <div class="p-2">Leslie Prichep</div>
+                </div>
+            </p>
+            <p
+                class="select-none text-center lg:text-left mb-5 mt-5 font-bold text-white mx-15 md:mx-5 md:ml-10 lg:mb-0 md:text-lg/normal lg:text-xl/normal  ">
+                Centro Internacional de Restauracion Neurológica (CIREN), Cuba
+                <div class="flex flex-wrap justify-start md:ml-10 text-white">
+                  <div class="p-2">Lilia Morales-Chacon</div>
+                </div>
+            </p>
+            <p
+                class="select-none text-center lg:text-left mb-5 mt-5 font-bold text-white mx-15 md:mx-5 md:ml-10 lg:mb-0 md:text-lg/normal lg:text-xl/normal  ">
+                CITED, Cuba
+                <div class="flex flex-wrap justify-start md:ml-10 text-white">
+                  <div class="p-2">Daysi Garcia</div>
+                </div>
+            </p>
+            <p
+                class="select-none text-center lg:text-left mb-5 mt-5 font-bold text-white mx-15 md:mx-5 md:ml-10 lg:mb-0 md:text-lg/normal lg:text-xl/normal  ">
+                Max Planck Institute for Human Cognitive and Brain Sciences, Germany
+                <div class="flex flex-wrap justify-start md:ml-10 text-white">
+                  <div class="p-2">Arno Villringer (Director)</div>
+                </div>
+            </p>
+        </div>
+      </div>
+{% endrow %}

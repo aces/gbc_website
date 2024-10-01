@@ -1,0 +1,82 @@
+---
+title: Global Brain Consortium - Partners
+description: Partners of the Global Brain Consortium
+layout: layouts/main.njk
+eleventyNavigation:
+  key: partners
+  title: Partners
+  order: 5
+---
+
+{% row %}
+  <div class="bg-c-fg1-l  grid place-content-center max-w-screen-xl px-8 lg:px-16 pt-8 mx-auto lg:pt-12 lg:grid-cols-12">
+    <div class="mr-auto place-self-center lg:col-span-12">
+      <h1
+        class="text-center uppercase text-colour-dark  lg:text-left mb-4 text-3xl/snug font-extrabold tracking-normal md:text-4xl/snug xl:text-5xl/snug ">
+        Our Partners</h1>
+    </div>
+  </div>
+{% endrow %}
+
+{% row %}
+<div class="bg-c-fg1-l max-w-screen-xl px-4 py-5 mx-auto lg:px-16 lg:py-8">
+  <div class="max-w-screen-xl px-4 py-6 mx-auto lg:py-6 lg:mt-6 lg:grid-cols-12">
+    <div class="mr-auto place-self-center lg:col-span-10">
+      <h1
+        class="text-center text-colour-dark  lg:text-left mb-16 text-2xl/snug font-extrabold tracking-normal md:text-3xl/snug xl:text-4xl/snug ">
+        Funders</h1>
+      <div class="grid md:grid-cols-3 grid-cols-1 gap-8 place-content-center w-full mb-8 px-4 md:justify-start">
+        {% for partner in partners %}
+          {% if partner.is_funder == 'True' %}
+            {% if partner.website != null %}
+              <a class="place-self-center" href="{{partner.website}}" target="_blank" rel="noopener noreferrer">
+                {% endif %}
+                <div class="grid col-span-1">
+                  <div class="grid grid-cols-3 ">
+                    <img class="col-span-3 w-full max-w-sm"
+                      src="{{ partner.logo_url | url }}"
+                      alt="{{ partner.name }} Logo">        
+                  </div>
+                </div>
+              {% if partner.website != null %}
+              </a>
+              {% endif %}
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endrow %}
+
+
+{% row %}
+<div class="bg-c-fg1-l max-w-screen-xl px-4 py-5 mx-auto lg:px-16 lg:py-8">
+  <div class="max-w-screen-xl px-4 mx-auto lg:grid-cols-12">
+    <div class="mr-auto place-self-center lg:col-span-10">
+      <h1
+        class="text-center text-colour-dark  lg:text-left mb-16 text-2xl/snug font-extrabold tracking-normal md:text-3xl/snug xl:text-4xl/snug ">
+        Member Affiliations</h1>
+      <div class="grid md:grid-cols-4 grid-cols-2 gap-12 place-content-center w-full mb-8 px-4 md:justify-start">
+        {% for partner in partners %}
+          {% if partner.is_funder != 'True' %}
+            {% if partner.website != null %}
+              <a class="place-self-center" href="{{partner.website}}" target="_blank" rel="noopener noreferrer">
+                {% endif %}
+                <div class="grid col-span-1">
+                  <div class="grid grid-cols-3">
+                    <img class="col-span-3 w-full max-w-sm"
+                      src="{{ partner.logo_url | url }}"
+                      alt="{{ partner.name }} Logo">        
+                  </div>
+                </div>
+              {% if partner.website != null %}
+              </a>
+              {% endif %}
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endrow %}
