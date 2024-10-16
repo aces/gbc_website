@@ -8,7 +8,7 @@
     "build": "npm-run-all -s build:*",
     "dev:11ty": "eleventy --serve",
     "dev:css": "tailwindcss -i src/assets/css/tailwind.css -o dist/css/styles.css --watch",
-    "build:11ty": "eleventy --pathprefix '/gbc_website/'",
+    "build:11ty": "eleventy --pathprefix ''",
     "build:css": "tailwindcss -i src/assets/css/tailwind.css -o dist/css/styles.css"
   },
   "keywords": [],
