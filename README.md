@@ -57,12 +57,12 @@ The network page contains all the members of the Global Brain Consortium. To add
 2) From the root directory, go to the `src/raw-data` folder
 3) Open `people.tsv` with your favorite editor (.tsv stands for Tab-Separated Values)
 4) In the field labelled `slug` type in the value `(first name)-(last name)`
-5) In the field labelled `name` type in the members name
+5) In the field labelled `name` type in the member's name
 6) In the field labelled `image` type in the url as follows `/assets/images/people/(filename)`
-7) In the field labelled `affiliation` type in the members affiliation, preferrably a short version
+7) In the field labelled `affiliation` type in the member's affiliation, preferably a short version
 8) In the field labelled `steeringGroupMember` type in `FALSE` unless the member is part of the Steering Committee, in which case enter `TRUE`
 9) In the field labelled `expertiseTags` copy the fields from another entry and paste it here. The tag filter is not currently active on this page.
-10) In the field labelled `website` enter the url for the members website (optional)
+10) In the field labelled `website` enter the url for the member's website (optional)
 11) Save the `people.tsv` file
 12) Create a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) to `main` branch
 
