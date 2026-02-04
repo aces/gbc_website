@@ -148,3 +148,12 @@ To run a local version of the website for development purposes:
 
 ### Building and Deploying
 The public version of the website will be built and deployed automatically when a commit is made to the `main` branch of this repository. To run the build script locally, follow the instructions in ["Running Locally"](#running-locally), replacing the final step with the command `npm build`.
+
+### Issues with website not building after a commit
+There is a [custom script](https://github.com/aces/gbc_website/blob/main/.github/workflows/build-and-deploy.yml) in the code that is run when committing changes or merging branches to the `main` branch of this repo. It is recommended not to change the settings in this file unless you have cloned or forked the repo to another repository.
+
+There may be an instance where the site does not automatically build with the updated content committed. This may be because the workflow did not run correctly. To check, click on the [Actions](https://github.com/aces/gbc_website/actions) tab on the repo. On this page you will see a list of all the workflows that were run. Failed workflows are marked in red. You can click on them for details.
+
+If you see the error message 'Action failed with "The process '/usr/bin/git' failed with exit code 128"' or similar, it could be that the [custom script](https://github.com/aces/gbc_website/blob/main/.github/workflows/build-and-deploy.yml) has failed to copy the newly built files to the repo. One possible reason for this failure is that the GitHub security key has expired. The key gives the script permission to deploy code to a webserver. 
+
+To fix this, you'll need to create your own public and secret key pair in GitHub to allow the build script to run properly. [Here's some information](https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-create-ssh-deploy-key) on how to do so. You'll need to run a command, probably in git bash on your local machine, then copy the generated keys into the GitHub.
